@@ -2735,6 +2735,9 @@ INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, 
 INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (109, '租户管理员', 'tenant_admin', 0, 1, '', 0, 1, '系统自动生成', '1', '2022-02-22 00:56:14', '1', '2022-02-22 00:56:14', '0', 121);
 INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (111, '租户管理员', 'tenant_admin', 0, 1, '', 0, 1, '系统自动生成', '1', '2022-03-07 21:37:58', '1', '2022-03-07 21:37:58', '0', 122);
 INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (153, '某角色', 'tt', 4, 1, '', 0, 2, '', '1', '2024-08-17 14:09:35', '1', '2024-08-17 14:09:35', '0', 1);
+INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (200, '系统管理员', 'sys_manager', 10, 1, '', 0, 1, '三员-系统管理员', '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (201, '安全管理员', 'sec_manager', 10, 1, '', 0, 1, '三员-安全管理员', '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (202, '审计管理员', 'audit_manager', 10, 1, '', 0, 1, '三员-审计管理员', '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
 COMMIT;
 SET IDENTITY_INSERT system_role OFF;
 -- @formatter:on
@@ -3604,6 +3607,12 @@ INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, update
 INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5790, 109, 2740, '1', '2024-07-13 22:37:24', '1', '2024-07-13 22:37:24', '0', 121);
 INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5791, 111, 2739, '1', '2024-07-13 22:37:24', '1', '2024-07-13 22:37:24', '0', 122);
 INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5792, 111, 2740, '1', '2024-07-13 22:37:24', '1', '2024-07-13 22:37:24', '0', 122);
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5793, 200, 1, '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5794, 201, 100, '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5795, 201, 101, '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5796, 202, 108, '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5797, 202, 500, '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5798, 202, 501, '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
 COMMIT;
 SET IDENTITY_INSERT system_role_menu OFF;
 -- @formatter:on

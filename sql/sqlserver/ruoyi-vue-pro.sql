@@ -7113,6 +7113,12 @@ INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, 
 GO
 INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (111, N'租户管理员', N'tenant_admin', 0, 1, N'', 0, 1, N'系统自动生成', N'1', N'2022-03-07 21:37:58', N'1', N'2022-03-07 21:37:58', N'0', 122)
 GO
+INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (200, N'系统管理员', N'sys_manager', 10, 1, N'', 0, 1, N'三员-系统管理员', N'1', N'2025-06-01 00:00:00', N'1', N'2025-06-01 00:00:00', N'0', 1)
+GO
+INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (201, N'安全管理员', N'sec_manager', 10, 1, N'', 0, 1, N'三员-安全管理员', N'1', N'2025-06-01 00:00:00', N'1', N'2025-06-01 00:00:00', N'0', 1)
+GO
+INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (202, N'审计管理员', N'audit_manager', 10, 1, N'', 0, 1, N'三员-审计管理员', N'1', N'2025-06-01 00:00:00', N'1', N'2025-06-01 00:00:00', N'0', 1)
+GO
 SET IDENTITY_INSERT system_role OFF
 GO
 COMMIT
@@ -8860,6 +8866,18 @@ GO
 INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5777, 101, 2739, N'1', N'2024-04-30 09:38:37', N'1', N'2024-04-30 09:38:37', N'0', 1)
 GO
 INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5778, 101, 2740, N'1', N'2024-04-30 09:38:37', N'1', N'2024-04-30 09:38:37', N'0', 1)
+GO
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5779, 200, 1, N'1', N'2025-06-01 00:00:00', N'1', N'2025-06-01 00:00:00', N'0', 1)
+GO
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5780, 201, 100, N'1', N'2025-06-01 00:00:00', N'1', N'2025-06-01 00:00:00', N'0', 1)
+GO
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5781, 201, 101, N'1', N'2025-06-01 00:00:00', N'1', N'2025-06-01 00:00:00', N'0', 1)
+GO
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5782, 202, 108, N'1', N'2025-06-01 00:00:00', N'1', N'2025-06-01 00:00:00', N'0', 1)
+GO
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5783, 202, 500, N'1', N'2025-06-01 00:00:00', N'1', N'2025-06-01 00:00:00', N'0', 1)
+GO
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5784, 202, 501, N'1', N'2025-06-01 00:00:00', N'1', N'2025-06-01 00:00:00', N'0', 1)
 GO
 SET IDENTITY_INSERT system_role_menu OFF
 GO

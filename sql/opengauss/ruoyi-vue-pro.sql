@@ -2915,12 +2915,15 @@ INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, 
 INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (101, '测试账号', 'test', 0, 1, '[]', 0, 2, '我想测试', '', '2021-01-06 13:49:35', '1', '2024-03-24 22:22:45', '0', 1);
 INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (109, '租户管理员', 'tenant_admin', 0, 1, '', 0, 1, '系统自动生成', '1', '2022-02-22 00:56:14', '1', '2022-02-22 00:56:14', '0', 121);
 INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (111, '租户管理员', 'tenant_admin', 0, 1, '', 0, 1, '系统自动生成', '1', '2022-03-07 21:37:58', '1', '2022-03-07 21:37:58', '0', 122);
+INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (200, '系统管理员', 'sys_manager', 10, 1, '', 0, 1, '三员-系统管理员', '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (201, '安全管理员', 'sec_manager', 10, 1, '', 0, 1, '三员-安全管理员', '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role (id, name, code, sort, data_scope, data_scope_dept_ids, status, type, remark, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (202, '审计管理员', 'audit_manager', 10, 1, '', 0, 1, '三员-审计管理员', '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
 COMMIT;
 -- @formatter:on
 
 DROP SEQUENCE IF EXISTS system_role_seq;
 CREATE SEQUENCE system_role_seq
-    START 112;
+    START 203;
 
 -- ----------------------------
 -- Table structure for system_role_menu
@@ -3781,12 +3784,18 @@ INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, update
 INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (4280, 111, 1222, '1', '2024-03-30 17:53:18', '1', '2024-03-30 17:53:18', '0', 122);
 INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5777, 101, 2739, '1', '2024-04-30 09:38:37', '1', '2024-04-30 09:38:37', '0', 1);
 INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5778, 101, 2740, '1', '2024-04-30 09:38:37', '1', '2024-04-30 09:38:37', '0', 1);
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5779, 200, 1, '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5780, 201, 100, '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5781, 201, 101, '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5782, 202, 108, '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5783, 202, 500, '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
+INSERT INTO system_role_menu (id, role_id, menu_id, creator, create_time, updater, update_time, deleted, tenant_id) VALUES (5784, 202, 501, '1', '2025-06-01 00:00:00', '1', '2025-06-01 00:00:00', '0', 1);
 COMMIT;
 -- @formatter:on
 
 DROP SEQUENCE IF EXISTS system_role_menu_seq;
 CREATE SEQUENCE system_role_menu_seq
-    START 5779;
+    START 5785;
 
 -- ----------------------------
 -- Table structure for system_sms_channel
