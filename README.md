@@ -20,6 +20,7 @@
 * 演示地址【Vue2 + element-ui】：<http://dashboard.yudao.iocoder.cn>
 * 启动文档：<https://doc.iocoder.cn/quick-start/>
 * 视频教程：<https://doc.iocoder.cn/video/>
+* [三员管理指南](docs/role-management.md)
 
 ## 🐰 版本说明
 
